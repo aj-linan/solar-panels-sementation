@@ -1,4 +1,4 @@
-# Solar Panel Segmentation & Temporal Analysis (TFM GIS)
+# Solar Panel Segmentation & Temporal Analysis
 
 This project implements a methodology for the automatic detection of photovoltaic solar panels using historical PNOA (Plan Nacional de Ortopotografía Aérea) orthophotos and convolutional neural networks (U-Net). It also enables temporal analysis of the installed surface area within a specific study area.
 
@@ -13,7 +13,7 @@ This project implements a methodology for the automatic detection of photovoltai
 ## Project Structure
 
 ```text
-tfm_gis/
+solar-panels-segmentation/
 ├── data/                  # Input data, models, and intermediate results
 ├── output/                # Final mosaics, GeoTIFFs, and evolution plots
 ├── src/                   # Processing scripts
@@ -40,7 +40,7 @@ tfm_gis/
    Copy the `.env.example` file to `.env` and adjust the paths for your system:
    ```bash
    # Edit .env
-   BASE_DIR=C:\Your\Path\To\Project\tfm_gis
+   BASE_DIR=/path/to/your/project/solar-panels-segmentation
    CRS=EPSG:25830
    WMS_URL=https://www.ign.es/wms/pnoa-historico
    ```
